@@ -10,10 +10,10 @@ Streams can be readable, writable or both.
 
 There are four type of streams:
 
-> > Readable stream, which data can be read.
-> > Writable stream, which data can be written
-> > Duplex stream, which is both readable and writable.
-> > Transform stream, which is a Duplex stream that can modify or transform the data as it is written and read.
+* Readable stream, which data can be read.
+* Writable stream, which data can be written
+* Duplex stream, which is both readable and writable.
+* Transform stream, which is a Duplex stream that can modify or transform the data as it is written and read.
 
 Steams are present in many Node.js modules, for example http.request(), zlib.createGzip(), fs.createReadStream(), process.stdout... all of these return streams.
 
@@ -41,7 +41,5 @@ or
 const { Readable } = require('stream);
 
 class myStream extends Readable {
-\_read() {
-
-    }
+\_read() {}
 }
