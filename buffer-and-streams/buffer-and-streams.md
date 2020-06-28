@@ -34,6 +34,7 @@ To implement a Readable stream, you need to construct an object, or inherit, fro
 const { Readable } = require('stream);
 
 const myStream = new Readable({});
+
 mystream.\_read=()=>{}
 
 or
